@@ -4,7 +4,7 @@ class SimpleForm extends Component {
   render() {
     return(
       <div>
-        <form>
+        <form onSubmit={this.props.onSubmit}> 
           <input
             type="text"
             name="name"
@@ -19,6 +19,8 @@ class SimpleForm extends Component {
             onChange={this.props.onChangeInput}
             placeholder="email"
           />
+
+          <button type="submit">add</button>
         </form>
       </div>
     );
