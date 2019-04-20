@@ -5,7 +5,7 @@ class Modal extends Component {
     let modal = (
       <div>
         <p>This is a modal</p>
-        <button>close</button>
+        <button onClick={this.props.onClose}>close</button>
       </div>
     );
 

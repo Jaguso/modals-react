@@ -22,7 +22,8 @@ class App extends Component {
     return (
       <div className="App">
         <button onClick={this.handleClick}>Open</button>
-        <Modal isOpen={this.state.isOpen}/>
+        <Modal isOpen={this.state.isOpen} 
+          onClose={() => this.setState({isOpen: false})}/>
         <SimpleForm/>
       </div>
     );
